@@ -1,0 +1,16 @@
+.planet-details__text-content {
+  margin-bottom: 1rem;
+}
+
+.planet-details__image-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.planet-details__image-content img {
+  max-width: 200px;  
+  aspect-ratio: 1;
+  border-radius: 10px;
+}

@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Planet3dPanel from './components/Planet3dPanel/Planet3dPanel';
+import PlanetInfoPanel from './components/PlanetInfoPanel/PlanetInfoPanel';
+import { PlanetsProvider } from './components/PlanetsProvider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PlanetsProvider>
+      <div className="app">
+        <PlanetInfoPanel />
+        <Planet3dPanel />
+      </div>
+    </PlanetsProvider>
   );
 }
 
