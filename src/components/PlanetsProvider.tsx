@@ -9,11 +9,7 @@ type TPlanetsContext = {
   selectedPlanet: TPlanet | null;
 };
 
-export const planetsContext = createContext<TPlanetsContext>({
-  planets: planets,
-  setSelectedPlanet: (planet: TPlanet | null) => {},
-  selectedPlanet: planets[0]
-});
+export const planetsContext = createContext<TPlanetsContext>({} as TPlanetsContext);
 
 export const PlanetsProvider = ({ children }: { children: ReactNode }) => {
   const [selectedPlanet, setSelectedPlanet] =
